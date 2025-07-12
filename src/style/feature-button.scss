@@ -1,0 +1,35 @@
+.feature-button {
+  display: inline-flex;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 24px;
+  position: absolute;
+  background-color: #00c742;
+  border-radius: 70px;
+  border: none;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  line-height: 28.8px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #00b33c;
+  }
+
+  &.btn-1 { top: 41px; left: 34px; }
+  &.btn-2 { top: 110px; left: 225px; }
+  &.btn-3 { top: 180px; left: 62px; }
+  &.btn-4 { top: 250px; left: 169px; }
+  &.btn-5 { top: 319px; left: 32px; }
+  &.btn-6 { top: 389px; left: 122px; }
+  &.btn-7 { top: 459px; left: 29px; }
+  &.btn-8 { top: 528px; left: 185px; }
+  &.btn-9 { top: 598px; left: 61px; }
+  &.btn-10 { top: 668px; left: 114px; }
+  &.btn-11 { top: 737px; left: 38px; }
+}
