@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "DM Sans", Helvetica, sans-serif;
   background-color: #ffffff;
@@ -346,7 +342,7 @@ body {
 }
 .cta-button-1:hover {
   transform: translateY(-2px);
-  box-shadow: 4px 12px rgba(245, 88, 237, 0.4);
+  box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
 }
 
 @media (max-width: 890px) {
@@ -744,14 +740,14 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 1920px;
-  margin: 0auto;
+  margin: 0 auto;
 }
 
 .hero-section {
   position: relative;
   width: 100%;
   background-color: #00c742;
-  border-radius: 0 40px 40px;
+  border-radius: 0 0 40px 40px;
   padding: 24px 80px;
 }
 
@@ -769,7 +765,7 @@ body {
 .hero-card {
   width: 100%;
   height: 785px;
-  border-radius: 40px 40px 0;
+  border-radius: 40px 40px 0 0;
   overflow: hidden;
   border-top: 1px solid #000000;
   border-right: 1px solid #000000;
@@ -795,7 +791,8 @@ body {
   display: inline-block;
 }
 
-.highlight-underline-top, .highlight-underline-bottom {
+.highlight-underline-top,
+.highlight-underline-bottom {
   position: absolute;
   left: -1.5px;
   right: -1.5px;
@@ -845,7 +842,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 26px;
+  padding: 0 26px;
 }
 
 .badge-logo {
@@ -862,11 +859,11 @@ body {
   line-height: 52.8px;
 }
 
-.features-headline.highlight {
+.features-headline .highlight {
   position: relative;
 }
 
-.features-headline.highlight-text {
+.features-headline .highlight-text {
   color: #f558ed;
   font-weight: 500;
   font-size: 48px;
@@ -909,7 +906,7 @@ body {
 }
 .cta-button-2:hover {
   transform: translateY(-2px);
-  box-shadow: 4px 12px rgba(245, 88, 237, 0.4);
+  box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
 }
 
 .phone-ui-element {
@@ -1020,7 +1017,7 @@ body {
 .scanning-section {
   width: 100%;
   max-width: 1760px;
-  margin: 0auto;
+  margin: 0 auto;
   padding: 64px 0;
 }
 
@@ -1056,7 +1053,7 @@ body {
 
 .scanning-highlight {
   position: relative;
-  margin: 10px;
+  margin: 0 10px;
   font-weight: 300;
 }
 .scanning-highlight::before, .scanning-highlight::after {
@@ -1129,7 +1126,7 @@ body {
   top: 99px;
   left: 0;
   background-color: #ebebeb;
-  border-radius: 20px 20px;
+  border-radius: 0 0 20px 20px;
   overflow: hidden;
 }
 
