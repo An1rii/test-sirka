@@ -1,19 +1,6 @@
-
-
 .features-image {
   width: 553px;
   height: 850px;
-}
-@media (max-width: 1559px){
-  .features-image{
-    width: 360px;
-    height: 850px;
-  }
-}
-@media (max-width: 1559px){
-  .features-image{
-    display: none;
-  }
 }
 
 .features-phone-container {
@@ -22,6 +9,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .features-phone-border {
   position: absolute;
   width: 400px;
@@ -49,17 +37,13 @@
   top: 8px;
   left: 8px;
 }
+
 .features-description {
   font-size: 24px;
   font-weight: $fw-light;
   line-height: 28.8px;
   width: 580px;
   margin-top: -43px;
-}
-@media(max-width: 1038px){
-  .features-description{
-    width: 500px;
-  };
 }
 
 .features-text {
@@ -70,21 +54,10 @@
   margin-top: 110px;
   margin-left: 15px;
 }
+
 .features-headline-container {
   position: relative;
   width: 617px;
-}
-@media (max-width: 1038px) {
-  .features-headline-container{
-    width: 430px;
-  }
-}
-
-.features-phone-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 
 .features-phone {
@@ -92,20 +65,13 @@
   width: 414px;
   height: 850px;
 }
+
 .features-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   max-width: 100%;
-  margin:  auto;
-}
-@media (max-width: 930px) {
-  .features-container {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 150px;
-
-  }
+  margin: auto;
 }
 
 .features-section {
@@ -114,24 +80,42 @@
   height: 904px;
   padding: 64px 0;
 }
-.features-text {
-  display: flex;
-  flex-direction: column;
-  width: 593px;
-  gap: 120px;
-  margin-top: 110px;
-}
-@media (max-width: 930px){
-  .features-section{
-    margin-bottom: 800px;
+
+
+@media (max-width: 1559px) {
+  .features-image {
+    display: none;
+    width: 360px;
+    height: 850px;
   }
 }
 
-@media (max-width: 930px){
+@media (max-width: 1038px) {
+  .features-description {
+    width: 500px;
+  }
+
+  .features-headline-container {
+    width: 430px;
+  }
+}
+
+@media (max-width: 930px) {
+  .features-text {
+    width: 423px;
+  }
+
   .features-phone-container {
     margin-top: 50px;
   }
-  .features-text{
-    width: 423px;
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+
+  .features-section {
+    margin-bottom: 800px;
   }
 }

@@ -27,10 +27,7 @@
   padding: 24px 80px;
 }
 
-.logo {
-  height: 30px;
-  width: 189px;
-}
+
 
 .top-cta {
   position: absolute;
@@ -469,4 +466,14 @@
 .scanning-cta {
   display: flex;
   justify-content: center;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }

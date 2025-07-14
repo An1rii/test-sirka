@@ -1,119 +1,11 @@
+
+
 .instruction-card {
   width: 573px;
   height: 479px;
   position: relative;
-
-
-
-}
-@media(max-width: 1758px){
-  .instruction-card {
-    width: 561px;
-    height: 479px;
-
-  }
 }
 
-@media(max-width: 1722px) {
-  .instruction-card {
-    width: 540px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1659px) {
-  .instruction-card {
-    width: 520px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1612px) {
-  .instruction-card {
-    width: 519px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1596px) {
-  .instruction-card {
-    width: 514px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1581px) {
-  .instruction-card {
-    width: 508px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1564px) {
-  .instruction-card {
-    width: 481px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1483px) {
-  .instruction-card {
-    width: 457px;
-    height: 479px;
-
-  }
-}
-@media(max-width: 1414px) {
-  .instruction-card {
-    width: 430px;
-    height: 479px;
-
-
-  }
-}
-@media(max-width: 1330px) {
-  .instruction-card {
-    width: 400px;
-    height: 479px;
-
-
-  }
-}
-@media(max-width: 1239px) {
-
-  .instruction-card {
-    width: 385px;
-    height: 479px;
-  }
-}
-@media(max-width: 1194px) {
-
-  .instruction-card {
-    width: 378px;
-    height: 479px;
-  }
-}
-@media(max-width: 1173px) {
-
-  .instruction-card {
-    width: 364px;
-    height: 479px;
-  }
-}
-@media(max-width: 1131px) {
-
-  .instruction-card {
-    width: 350px;
-    height: 479px;
-  }
-}
-@media(max-width: 1089px) {
-
-  .instruction-card {
-    flex-direction: column; /* Блоки становятся вертикальными колонками */
-    align-items: center;
-  }
-}
 .instruction-cards {
   display: flex;
   flex-wrap: wrap;
@@ -121,36 +13,11 @@
   margin-bottom: 40px;
 }
 
-/* Стили для широких экранов */
-.instruction-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 40px;
-}
-
-/* Медиазапрос для экранов меньше 768px */
-@media (max-width: 1200px) {
-  .instruction-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .instruction-card {
-    width: 500px;
-    margin-bottom: 20px;
-  }
-}
 .instruction-image.step2 {
   width: 162px;
   height: 332px;
   top: 20px;
   left: 197px;
-}
-@media (max-width: 1507px) {
-  .instruction-image.step2{
-    left: 127px;
-  }
 }
 
 .features-phone {
@@ -159,16 +26,6 @@
   height: 850px;
   margin-bottom: 35px;
 }
-@media (max-width: 939px){
-  .features-phone{
-    flex-direction: column; /* Блоки становятся вертикальными колонками */
-    align-items: center;
-  }
-
-}
-
-
-
 
 .scanning-header {
   display: flex;
@@ -198,16 +55,130 @@
   color: $color-green;
   font-size: 32px;
   line-height: 35.2px;
-
 }
+
 .scanning-subheadline-text span {
   text-align: center;
 }
 
+@media (max-width: 1758px) {
+  .instruction-card {
+    width: 561px;
+  }
+}
 
+@media (max-width: 1722px) {
+  .instruction-card {
+    width: 540px;
+  }
+}
 
-@media(max-width: 1700px){
-  .scanning-headline{
+@media (max-width: 1700px) {
+  .scanning-headline {
     text-align: center;
+  }
+}
+
+@media (max-width: 1659px) {
+  .instruction-card {
+    width: 520px;
+  }
+}
+
+@media (max-width: 1612px) {
+  .instruction-card {
+    width: 519px;
+  }
+}
+
+@media (max-width: 1596px) {
+  .instruction-card {
+    width: 514px;
+  }
+}
+
+@media (max-width: 1581px) {
+  .instruction-card {
+    width: 508px;
+  }
+}
+
+@media (max-width: 1564px) {
+  .instruction-card {
+    width: 481px;
+  }
+}
+
+@media (max-width: 1507px) {
+  .instruction-image.step2 {
+    left: 127px;
+  }
+}
+
+@media (max-width: 1483px) {
+  .instruction-card {
+    width: 457px;
+  }
+}
+
+@media (max-width: 1414px) {
+  .instruction-card {
+    width: 430px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .instruction-card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1239px) {
+  .instruction-card {
+    width: 385px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .instruction-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instruction-card {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1194px) {
+  .instruction-card {
+    width: 378px;
+  }
+}
+
+@media (max-width: 1173px) {
+  .instruction-card {
+    width: 364px;
+  }
+}
+
+@media (max-width: 1131px) {
+  .instruction-card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1089px) {
+  .instruction-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 939px) {
+  .features-phone {
+    flex-direction: column;
+    align-items: center;
   }
 }
