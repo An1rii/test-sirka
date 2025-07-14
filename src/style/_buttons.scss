@@ -1,0 +1,37 @@
+@import "variables";
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $br-full;
+  font-family: $font-rajdhani;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+
+  &.black {
+    height: 54px;
+    width: 241px;
+    background-color: $color-black;
+    color: $color-white;
+    font-weight: $fw-bold;
+    font-size: 18px;
+    border: none;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  &.pink {
+    width: 411px;
+    height: 68px;
+    background-color: $color-pink;
+    border: none;
+    position: relative;
+    color: $color-white;
+  }
+}
+
