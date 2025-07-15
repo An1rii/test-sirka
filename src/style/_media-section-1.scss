@@ -1,4 +1,4 @@
-
+@import "variables";
 .badge-text {
   font-family: $font-dm-sans;
   font-weight: $fw-light;
@@ -18,7 +18,7 @@
 
 .brickit-badge {
   position: absolute;
-  top: 102px;
+  top: 69px;
   right: 442px;
   width: 277px;
   height: 61px;
@@ -70,6 +70,15 @@
 
 .hero-text {
   max-width: 736px;
+}
+.hero-section {
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  background-color: $color-green;
+  border-radius: 0 0 $br-card $br-card;
+  padding: 24px 80px;
 }
 
 
@@ -160,12 +169,6 @@
     right: 135px;
     width: 226px;
   }
-
-  .hero-description {
-    font-size: 30px;
-    max-width: 550px;
-  }
-
   .phone-border {
     width: 225px;
     height: 568px;
@@ -244,13 +247,6 @@
     width: 226px;
   }
 
-  .hero-headline {
-    font-size: 60px;
-  }
-
-  .highlight-text {
-    font-size: 50px;
-  }
 }
 
 @media (max-width: 1328px) {
@@ -261,15 +257,6 @@
   .brickit-badge {
     display: none;
   }
-
-  .hero-headline {
-    font-size: 60px;
-  }
-
-  .highlight-text {
-    font-size: 50px;
-  }
-
   .phone-border {
     width: 225px;
     height: 468px;
@@ -284,7 +271,13 @@
     left: -15px;
   }
 }
+@media (max-width: 1071px) {
+  .highlight-text {
 
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
 @media (max-width: 1142px) {
   .hero-description {
     font-size: 24px;
@@ -312,7 +305,15 @@
   border-radius: $br-full;
   border: 1px solid $color-black;
 }
-
+.cta-shadow-2 {
+  position: absolute;
+  width: 413px;
+  height: 68px;
+  top: 5px;
+  left: 0;
+  border-radius: $br-full;
+  border: 1px solid $color-black;
+}
 .cta-button-1 {
   position: absolute;
   width: 413px;
@@ -336,7 +337,6 @@
   }
 }
 
-
 @media (max-width: 890px) {
   .cta-shadow {
  top:250px
@@ -352,16 +352,12 @@
   .cta-button-1{
     top:432px
   }
-.hero-description{
-  margin-left: 20px;
-}
+
   .hero-headline {
     font-size: 36px;
     line-height: 42px;
   }
   .hero-description{
-    font-size: 18px;
-    line-height: 24px;
     margin-left: 1px;
   }
   .phone-border{
@@ -388,8 +384,7 @@
 }
 @media (max-width: 639px) {
   .hero-description{
-    font-size: 15px;
-    line-height: 24px;
+
     margin-left: -36px;
   }
   .hero-headline{
@@ -411,13 +406,15 @@
     left:-77px;
   }
 }
-@media(max-width: 584px){
+@media (max-width: 700px) {
+  .hero-section {
+    padding: 24px 36px;
+  }
 
-}
+};
 @media (max-width: 562px) {
   .cta-shadow {
-    left:-56px;
-    top:254px
+   display: none;
   }
   .cta-button-1{
     left:-52px
@@ -446,11 +443,50 @@
     width: 140px;
   }
 }
+@media (max-width: 512px) {
+  .scanning-subheadline-text{
+    font-size: 24px;
+    width: 100%;
+  }
+}
 @media(max-width: 430px){
   .cta-shadow {
    display: none;
   }
   .cta-button-1{
     display: none;
+  }
+}
+
+
+.cta-button-2 {
+  position: absolute;
+  width: 413px;
+  height: 68px;
+  top: 0;
+  left: 5px;
+  background: $color-pink;
+  border-radius: $br-full;
+  border: none;
+  font-family: $font-rajdhani;
+  font-weight: $fw-extra-bold;
+  color: $color-white;
+  font-size: 22px;
+  line-height: 26.4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+  }
+}
+
+@media(max-width: 447px){
+  .cta-shadow-2{
+    width: 352px;
+  }
+  .cta-button-2{
+    width: 350px;
   }
 }

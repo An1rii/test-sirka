@@ -1,4 +1,4 @@
-
+@import "variables";
 
 .instruction-card {
   width: 573px;
@@ -13,11 +13,20 @@
   margin-bottom: 40px;
 }
 
+
 .instruction-image.step2 {
   width: 162px;
   height: 332px;
   top: 20px;
   left: 197px;
+}
+@media (max-width: 430px) {
+  .instruction-image:not(.step2):not(.step3) {
+    width: 336px;
+    height: 332px;
+    top: 20px;
+    left: 40px;
+  }
 }
 
 .features-phone {
@@ -37,6 +46,7 @@
 }
 
 .scanning-headline {
+  font-family: $font-dm-sans;
   font-size: 48px;
   font-weight: $fw-medium;
   line-height: 52.8px;
@@ -51,6 +61,7 @@
 
 .scanning-subheadline-text {
   position: relative;
+  font-family: $font-dm-sans;
   font-weight: $fw-normal;
   color: $color-green;
   font-size: 32px;
@@ -76,8 +87,10 @@
 @media (max-width: 1700px) {
   .scanning-headline {
     text-align: center;
+
   }
 }
+
 
 @media (max-width: 1659px) {
   .instruction-card {
@@ -108,13 +121,6 @@
     width: 481px;
   }
 }
-
-@media (max-width: 1507px) {
-  .instruction-image.step2 {
-    left: 127px;
-  }
-}
-
 @media (max-width: 1483px) {
   .instruction-card {
     width: 457px;
@@ -138,6 +144,17 @@
     width: 385px;
   }
 }
+@media (max-width: 1199px) {
+  .instruction-card {
+    width: 500px;
+  }
+}
+
+@media (max-width: 507px) {
+  .instruction-card {
+    width: 385px;
+  }
+}
 
 @media (max-width: 1200px) {
   .instruction-cards {
@@ -145,29 +162,9 @@
     align-items: center;
   }
 
-  .instruction-card {
-    width: 500px;
-    margin-bottom: 20px;
-  }
+
 }
 
-@media (max-width: 1194px) {
-  .instruction-card {
-    width: 378px;
-  }
-}
-
-@media (max-width: 1173px) {
-  .instruction-card {
-    width: 364px;
-  }
-}
-
-@media (max-width: 1131px) {
-  .instruction-card {
-    width: 350px;
-  }
-}
 
 @media (max-width: 1089px) {
   .instruction-card {
@@ -182,3 +179,71 @@
     align-items: center;
   }
 }
+@media (max-width: 713px) {
+  .scanning-headline {
+    font-size: 24px;
+  }
+}
+
+.scanning-subheadline {
+  position: relative;
+  width: 514px;
+  height: 37.38px;
+}
+
+@media (max-width: 513px) {
+
+  .scanning-subheadline{
+    width: 323px;
+  }
+}
+.scanning-header{
+  margin-top: 360px;
+}
+
+.cta-button-3 {
+  position: absolute;
+  width: 413px;
+  height: 68px;
+  top: 0;
+  left: 5px;
+  background: #DA2CD1;
+  border-radius: $br-full;
+  border: none;
+  font-family: $font-rajdhani;
+  font-weight: $fw-extra-bold;
+  color: $color-white;
+  font-size: 22px;
+  line-height: 26.4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+  }
+}
+@media (max-width: 451px) {
+  .cta-shadow-2{
+    width: 352px;
+
+  }
+  .cta-button-3{
+    width: 350px;
+  }
+  .instruction-card{
+    margin-left: -21px;
+  }
+
+}
+@media(max-width: 507px){
+  .instruction-image.step2{
+    left: 113px;
+  }
+}
+@media (max-width: 430px) {
+  .scanning-headline{
+    font-size: 16px;
+  }
+}
+

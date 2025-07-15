@@ -17,18 +17,6 @@
   margin: 0 auto;
 }
 
-
-
-.hero-section {
-  position: relative;
-  width: 100%;
-  background-color: $color-green;
-  border-radius: 0 0 $br-card $br-card;
-  padding: 24px 80px;
-}
-
-
-
 .top-cta {
   position: absolute;
   right: 80px;
@@ -69,6 +57,11 @@
 .highlight {
   position: relative;
   display: inline-block;
+
+}
+.highlight1 {
+  position: relative;
+  display: inline-block;
 }
 
 
@@ -76,11 +69,17 @@
 .highlight-underline-top,
 .highlight-underline-bottom {
   position: absolute;
-  left: -1.5px;
-  right: -1.5px;
+  left: -5.5px;
+  right: -5.5px;
   height: 25.29px;
 }
-
+.highlight-underline-top1,
+.highlight-underline-bottom1 {
+  position: absolute;
+  left: -1.5px;
+  right: -14.5px;
+  height: 25.29px;
+}
 .highlight-underline-top {
   top: 0;
   background-image: url('../img/frame/up.svg');
@@ -89,10 +88,24 @@
 
 .highlight-underline-bottom {
   bottom: 0;
+
   background-image: url('../img/frame/down.svg');
   background-size: 100% 100%;
 }
 
+.highlight-underline-top1 {
+  top: 0;
+  left: -15.5px;
+  background-image: url('../img/frame/pink-top.svg');
+  background-size: 100% 100%;
+}
+
+.highlight-underline-bottom1 {
+  bottom: -6px;
+  left: -16px;
+  background-image: url('../img/frame/pink-bottom.svg');
+  background-size: 100% 100%;
+}
 
 
 .hero-cta {
@@ -149,6 +162,7 @@
 
 
 .features-headline {
+  font-family: $font-dm-sans;
   font-weight: $fw-medium;
   font-size: 48px;
   line-height: 52.8px;
@@ -183,28 +197,7 @@
   border: 1px solid $color-black;
 }
 
-.cta-button-2 {
-  position: absolute;
-  width: 413px;
-  height: 68px;
-  top: 0;
-  left: 5px;
-  background: $color-pink;
-  border-radius: $br-full;
-  border: none;
-  font-family: $font-rajdhani;
-  font-weight: $fw-extra-bold;
-  color: $color-white;
-  font-size: 22px;
-  line-height: 26.4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
-  }
-}
 
 
 
@@ -218,14 +211,7 @@
   left: 27px;
 }
 
-.phone-ui-border {
-  position: relative;
-  width: 373px;
-  height: 71px;
-  background-color: rgba(217, 217, 217, 0.25);
-  border-radius: 7.59px;
-  border: 1.52px solid $color-white;
-}
+
 
 .phone-ui-line {
   position: absolute;
@@ -307,13 +293,6 @@
   }
 }
 
-.features-subtitle {
-  color: $color-green;
-  font-size: 32px;
-  font-weight: $fw-normal;
-  line-height: 38.4px;
-  text-align: center;
-}
 
 .features-image-container {
   position: relative;
@@ -328,27 +307,10 @@
   padding: 64px 0;
 }
 
-.scanning-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1274px;
-  margin-bottom: 40px;
-  margin-top: 260px;
-}
 
-.scanning-headline {
-  font-size: 48px;
-  font-weight: $fw-medium;
-  line-height: 52.8px;
-  margin-bottom: 15px;
-}
 
-.scanning-subheadline {
-  position: relative;
-  width: 514px;
-  height: 37.38px;
-}
+
+
 
 .scanning-subheadline-text {
   position: relative;
@@ -406,17 +368,19 @@
 .number {
   width: 14px;
   height: 26px;
+  font-family: $font-dm-sans;
   font-weight: $fw-normal;
   font-size: 24px;
   line-height: 26.4px;
   margin-left: 12px;
+  text-align: center;
 }
 
 .number-underline {
   position: absolute;
   width: 40px;
   height: 31px;
-  left: -3px;
+  left: -2px;
   background-image: url('../img/frame/green-top-frame.svg'), url('../img/frame/green-bottom-frame.svg');
   background-position: top, bottom;
   background-repeat: no-repeat;
@@ -426,7 +390,8 @@
 .instruction-text {
   position: absolute;
   top: 48px;
-  left: 80px;
+  left: 88px;
+  font-family: $font-dm-sans;
   font-weight: $fw-normal;
   font-size: 24px;
   line-height: 26.4px;
@@ -448,12 +413,7 @@
   position: absolute;
 }
 
-.instruction-image:not(.step2):not(.step3) {
-  width: 493px;
-  height: 332px;
-  top: 20px;
-  left: 40px;
-}
+
 
 
 .instruction-image.step3 {
