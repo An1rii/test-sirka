@@ -274,8 +274,11 @@
 @media (max-width: 1071px) {
   .highlight-text {
 
-    font-size: 45px;
+    font-size: 55px;
     line-height: 50px;
+  }
+  .hero-headline{
+    font-size: 60px;
   }
 }
 @media (max-width: 1142px) {
@@ -288,6 +291,24 @@
   .hero-description {
     font-size: 22px;
     max-width: 433px;
+  }
+}
+@media (max-width: 966px) {
+  .hero-headline{
+    font-size: 50px;
+  }
+  .highlight-text {
+
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 937px) {
+ .hero-description{
+   max-width: 395px;
+ }
+  .hero-headline{
+    font-size: 43px;
   }
 }
 @media (max-width: 932px) {
