@@ -223,18 +223,29 @@
     box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
   }
 }
+.cta-shadow-3 {
+  position: absolute;
+  width: 413px;
+  height: 68px;
+  top: 5px;
+  left: 0;
+  border-radius: $br-full;
+  border: 1px solid $color-black;
+}
 @media (max-width: 451px) {
-  .cta-shadow-2{
-    width: 352px;
-    right: 12px;
-
+  .cta-shadow-3 {
+    width: 315px;
+    left: 45px;
   }
   .cta-button-3{
-    width: 350px;
-    right: 12px;
+    width: 315px;
+    left: 53px;
   }
   .instruction-card{
-    margin-left: -21px;
+    margin-left: 16px;
+  }
+  .scanning-subheadline-text{
+    left: 20px;
   }
 
 }
