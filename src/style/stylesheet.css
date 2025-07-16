@@ -34,8 +34,10 @@ body {
   font-size: 18px;
   border: none;
 }
-.cta-button.black:hover {
+.cta-button.black:hover, .cta-button.black:focus {
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+  outline: none;
 }
 .cta-button.pink {
   width: 411px;
@@ -129,11 +131,18 @@ body {
 .hero-section {
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-color: #00c742;
   border-radius: 0 0 40px 40px;
   padding: 24px 80px;
+}
+
+.hero-card-bg {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/background/main_background.png");
+  background-size: 100% 100%;
 }
 
 @media (max-width: 1900px) {
@@ -374,9 +383,10 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.cta-button-1:hover {
+.cta-button-1:hover, .cta-button-1:focus {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+  outline: none;
 }
 
 @media (max-width: 890px) {
@@ -509,9 +519,10 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.cta-button-2:hover {
+.cta-button-2:hover, .cta-button-2:focus {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+  outline: none;
 }
 
 @media (max-width: 447px) {
@@ -911,9 +922,10 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.cta-button-3:hover {
+.cta-button-3:hover, .cta-button-3:focus {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+  outline: none;
 }
 
 .cta-shadow-3 {
@@ -960,7 +972,7 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .top-cta {
@@ -982,13 +994,6 @@ body {
   border-top: 1px solid #000000;
   border-right: 1px solid #000000;
   border-left: 1px solid #000000;
-}
-
-.hero-card-bg {
-  height: 100%;
-  width: 100%;
-  background-image: url("../img/background/main_background.png");
-  background-size: 100% 100%;
 }
 
 .hero-inner {

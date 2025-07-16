@@ -74,14 +74,19 @@
 .hero-section {
   box-sizing: border-box;
   position: relative;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background-color: $color-green;
   border-radius: 0 0 $br-card $br-card;
   padding: 24px 80px;
 }
 
-
+.hero-card-bg {
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/background/main_background.png");
+  background-size: 100% 100%;
+}
 @media (max-width: 1900px) {
   .product-image {
     width: 840px;
@@ -352,9 +357,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+    outline: none;
   }
 }
 
@@ -497,9 +504,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+    outline: none;
   }
 }
 

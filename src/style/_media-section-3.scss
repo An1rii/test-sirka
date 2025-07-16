@@ -218,9 +218,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(245, 88, 237, 0.4);
+    outline: none; // Removes default browser outline if you're applying custom focus styles
   }
 }
 .cta-shadow-3 {
