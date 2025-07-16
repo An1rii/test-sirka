@@ -57,6 +57,7 @@
 .highlight {
   position: relative;
   display: inline-block;
+  padding-right: 5px;
 
 }
 .highlight1 {
@@ -69,8 +70,8 @@
 .highlight-underline-top,
 .highlight-underline-bottom {
   position: absolute;
-  left: -5.5px;
-  right: -5.5px;
+  left: -9.5px;
+  right: -0.5px;
   height: 25.29px;
 }
 .highlight-underline-top1,
@@ -95,14 +96,14 @@
 
 .highlight-underline-top1 {
   top: 0;
-  left: -15.5px;
+  left: -25.5px;
   background-image: url('../img/frame/pink-top.svg');
   background-size: 100% 100%;
 }
 
 .highlight-underline-bottom1 {
   bottom: -6px;
-  left: -16px;
+  left: -26px;
   background-image: url('../img/frame/pink-bottom.svg');
   background-size: 100% 100%;
 }
